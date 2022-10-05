@@ -1,0 +1,23 @@
+
+package BankingSystem;
+/**
+ *
+ * @author mohammed khalal
+ * CS 505
+ */
+public class Main {
+    
+  public static void main(String[] args) throws InsufficientFundsException {
+ 
+       Customer C = new Customer(new BankAccount( 200.00));
+         C.addAccount(new BankAccount( 50));
+        C.addAccount(new CreditAccount( 50));
+        C.addAccount(new CreditAccount(50));
+        C.addAccount(new CreditAccount( 50));
+        C.pay(150);
+      C.pay(220);
+      C.pay(5000
+      );
+ 
+  }
+}
